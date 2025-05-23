@@ -11,6 +11,7 @@ on: [pull_request_target]
 permissions:
   contents: write
   pull-requests: write
+  metadata: write
 
 # env:
 #   GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
