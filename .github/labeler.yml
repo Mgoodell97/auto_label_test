@@ -1,8 +1,9 @@
 perception:
 - changed-files:
-  - any-glob-to-any-file: 'perception/**'
+  - any-glob-to-any-file:
+    - perception/**
 
-to_do:
+perception_2:
 - changed-files:
-  - any-glob-to-any-file: 'perception_2/**'
-
+  - any-glob-to-any-file:
+    - perception_2/**
