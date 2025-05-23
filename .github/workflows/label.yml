@@ -8,15 +8,21 @@
 name: Labeler
 on: [pull_request_target]
 
+permissions:
+  contents: write
+  pull-requests: write
+  metadata: write
+
+# env:
+#   GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
+
 jobs:
   label:
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write
-
     steps:
-    - uses: actions/labeler@v4
+    - uses: actions/labeler@v5
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
