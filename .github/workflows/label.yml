@@ -13,6 +13,8 @@ permissions:
   pull-requests: write
   metadata: write
 
+# env:
+#   GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
 
 jobs:
   label:
